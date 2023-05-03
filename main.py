@@ -20,12 +20,12 @@ else:
             b=float(input("digite o valor de b:"))
             c=float(input("digite o valor de c:"))
             delta=b**2-4*a*c
-        if delta < 0:
-            print("nao exitem raixes reais para a equação")
-        elif delta==0:
-            x= -b/2*a
-            print("a equaçao so tem uma raiz real: {:.2f}".format(x))
-        else:
-            x1 = (-b + math.sqrt(delta))/(2*a)
-            x2 = (-b - math.sqrt(delta))/(2*a)
+            if delta < 0:
+              print("nao exitem raixes reais para a equação")
+            elif delta==0:
+                x= -b/2*a
+                print("a equaçao so tem uma raiz real: {:.2f}".format(x))
+            else:
+             x1 = (-b + math.sqrt(delta))/(2*a)
+             x2 = (-b - math.sqrt(delta))/(2*a)
             print("A equação possui duas raízes reais: {:.2f} e {:.2f}".format(min(x1,x2), max(x1,x2)))
